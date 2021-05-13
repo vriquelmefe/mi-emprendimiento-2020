@@ -1,0 +1,13 @@
+.navbar {
+  background-color: $black;
+}
+
+.navbar-nav__link {
+  color: $white;
+  font-weight: $bold;
+}
+
+.navbar-dark .navbar-toggler {
+  border-color: transparent;
+  color: $white;
+}
