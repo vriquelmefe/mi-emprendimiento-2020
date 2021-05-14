@@ -9928,6 +9928,61 @@ h3 {
     border-color: #dee2e6;
   }
 }
+* {
+  margin: 0;
+  border: 0;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+h5 {
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.main__article {
+  border: 1px solid #000000;
+}
+.main__article--image {
+  padding: 1.2em;
+}
+
+.main__article--border {
+  border: 1px dotted #060606;
+  border-radius: 0;
+}
+
+.footer {
+  background-color: #000000;
+  color: #fff;
+}
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #ffa500;
+}
+
+.footer__button {
+  background-color: #ffaf6d;
+  border-radius: 5px;
+  height: 2.5em;
+  font-weight: 400;
+  border: 1px solid #fff;
+  padding: 0 0.2em;
+}
+
+.footer__input {
+  border-radius: 5px;
+  height: 2.5em;
+  font-size: 16px;
+  padding: 1em 0.5em;
+  border: 2px solid gray;
+}
+
 .navbar {
   background-color: #000000;
 }
@@ -9935,11 +9990,24 @@ h3 {
 .navbar-nav__link {
   color: #fff;
   font-weight: 700;
+  padding: 0.5em;
+}
+.navbar-nav__link:hover {
+  color: #ffa500;
+  text-decoration: none;
 }
 
 .navbar-dark .navbar-toggler {
   border-color: transparent;
   color: #fff;
+}
+.navbar-dark .navbar-toggler:hover {
+  color: #ffa500;
+  text-decoration: none;
+}
+
+.fa-bars {
+  font-size: 35px;
 }
 
 /*# sourceMappingURL=main.css.map */

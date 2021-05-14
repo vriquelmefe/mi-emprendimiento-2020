@@ -1,0 +1,11 @@
+.footer {
+  background-color: $black;
+  color: $white;
+  & a {
+    color: $white;
+    text-decoration: none;
+    &:hover {
+      color: $orange;
+    }
+  }
+}

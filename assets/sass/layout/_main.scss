@@ -1,0 +1,11 @@
+.main__article {
+  border: 1px solid $black;
+  &--image {
+    padding: 1.2em;
+  }
+}
+
+.main__article--border {
+  border: 1px dotted $sable;
+  border-radius: 0;
+}
