@@ -2,7 +2,11 @@
   background-color: $tangerine;
   border-radius: 5px;
   height: 2.5em;
+  width: min-content;
   font-weight: $regular;
   border: 1px solid $white;
   padding: 0 .2em;
+  @include large {
+    margin-left: 1em;
+  }
 }

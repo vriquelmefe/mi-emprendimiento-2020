@@ -1,5 +1,14 @@
+//Breakpoint o Media
+$min-xs: 1px;
+$min-sm: 576px;
+$min-md: 768px;
+$min-lg: 992px;
+$min-xl: 1200px;
+$min-xxl: 1400px;
+$breakpoints: ( 'xs': (min-width: $min-xs), 'sm': (min-width: $min-sm), 'md': (min-width: $min-md), 'lg': (min-width: $min-lg), 'xl': (min-width: $min-xl), 'xxl': (min-width: $min-xxl)) !default;
 //primer esquema de color
 $white: #fff;
+$gray: #505050;
 //segundo esquema de color
 $black: #000000;
 $sable: #060606;

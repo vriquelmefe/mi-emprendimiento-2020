@@ -1,11 +1,62 @@
 .main__article {
   border: 1px solid $black;
-  &--image {
-    padding: 1.2em;
+  &--circle {
+    border-radius: 50%;
+  }
+  &--icons i {
+    padding: 0 .5em;
+  }
+  &--iconsocial {
+    display: flex;
+    justify-content: center;
+    i {
+      padding: .5em;
+      color: $black;
+    }
+  }
+  &--tittle-more {
+    background-color: $gray;
+    color: $white;
+    font-weight: $bold;
+    text-align: center;
+  }
+}
+
+.main__article-item {
+  list-style: circle;
+  & a {
+    color: #6c259c;
   }
 }
 
 .main__article--border {
   border: 1px dotted $sable;
   border-radius: 0;
+}
+
+@include medium {
+  .col-md-6 {
+    max-width: 48%;
+  }
+}
+
+@include large {
+  .col-lg-6 {
+    max-width: 49%;
+  }
+}
+
+.main__article--image {
+  width: 50%;
+  height: 50%;
+  border: 1px solid $black;
+  align-self: center;
+  @include large {
+    width: 30%;
+    height: 30%;
+  }
+}
+
+.main__card-text {
+  font-weight: $bold;
 }

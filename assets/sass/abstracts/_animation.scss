@@ -1,0 +1,30 @@
+.rueda {
+  animation: rotando 3s linear infinite;
+  transform-origin: 55%;
+  transform-box: fill-box;
+  /* <--- */
+}
+
+@keyframes rotando {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+//movimiento corchetes svg
+.corchetes {
+  animation: ladoAlado 2s ease-in-out infinite;
+  animation-direction: alternate;
+}
+
+@keyframes ladoAlado {
+  0% {
+    transform: translate(150px, 0px);
+  }
+  100% {
+    transform: translate(150, 0);
+  }
+}
