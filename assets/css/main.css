@@ -9975,7 +9975,7 @@ h5 {
   justify-content: center;
 }
 .header__container img {
-  width: 98%;
+  width: 100%;
   height: 15em;
 }
 @media (min-width: 768px) {
