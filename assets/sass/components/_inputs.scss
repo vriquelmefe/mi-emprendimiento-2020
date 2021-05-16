@@ -5,4 +5,7 @@
   padding: 1em .5em;
   border: 2px solid gray;
   margin-bottom: .3em;
+  &:focus {
+    background-color: $tangerine;
+  }
 }

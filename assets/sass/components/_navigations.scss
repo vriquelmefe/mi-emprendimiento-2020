@@ -12,6 +12,11 @@
   }
 }
 
+.navbar-nav__item {
+  padding: .2em;
+  font-family: $poppins;
+}
+
 .navbar-dark .navbar-toggler {
   border-color: transparent;
   color: $white;

@@ -9967,7 +9967,7 @@ body {
 
 h5 {
   font-weight: 700;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .header__container {
@@ -10011,6 +10011,8 @@ h5 {
 .main__article--tittle-more {
   background-color: #505050;
   color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
   font-weight: 700;
   text-align: center;
 }
@@ -10020,6 +10022,7 @@ h5 {
 }
 .main__article-item a {
   color: #6c259c;
+  font-family: "Poppins", sans-serif;
 }
 
 .main__article--border {
@@ -10034,12 +10037,12 @@ h5 {
 }
 @media (min-width: 992px) {
   .col-lg-6 {
-    max-width: 49%;
+    max-width: 47%;
   }
 }
 .main__article--image {
-  width: 50%;
-  height: 50%;
+  width: 60%;
+  height: 60%;
   border: 1px solid #000000;
   align-self: center;
 }
@@ -10052,11 +10055,13 @@ h5 {
 
 .main__card-text {
   font-weight: 700;
+  font-size: 20px;
 }
 
 .footer {
   background-color: #000000;
   color: #fff;
+  font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10112,11 +10117,16 @@ h5 {
   font-weight: 400;
   border: 1px solid #fff;
   padding: 0 0.2em;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
 }
 @media (min-width: 992px) {
   .footer__button {
     margin-left: 1em;
   }
+}
+.footer__button:hover {
+  background-color: #fff;
 }
 
 .footer__input {
@@ -10126,6 +10136,9 @@ h5 {
   padding: 1em 0.5em;
   border: 2px solid gray;
   margin-bottom: 0.3em;
+}
+.footer__input:focus {
+  background-color: #ffaf6d;
 }
 
 .navbar {
@@ -10140,6 +10153,11 @@ h5 {
 .navbar-nav__link:hover {
   color: #ffa500;
   text-decoration: none;
+}
+
+.navbar-nav__item {
+  padding: 0.2em;
+  font-family: "Poppins", sans-serif;
 }
 
 .navbar-dark .navbar-toggler {
