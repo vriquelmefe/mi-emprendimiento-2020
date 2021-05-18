@@ -9929,30 +9929,59 @@ h3 {
   }
 }
 .rueda {
+  -webkit-animation: rotando 3s linear infinite;
   animation: rotando 3s linear infinite;
+  -webkit-transform-origin: 55%;
+  -ms-transform-origin: 55%;
   transform-origin: 55%;
   transform-box: fill-box;
   /* <--- */
 }
 
-@keyframes rotando {
+@-webkit-keyframes rotando {
   0% {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotando {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
 .corchetes {
+  -webkit-animation: ladoAlado 2s ease-in-out infinite;
   animation: ladoAlado 2s ease-in-out infinite;
+  -webkit-animation-direction: alternate;
   animation-direction: alternate;
 }
 
-@keyframes ladoAlado {
+@-webkit-keyframes ladoAlado {
   0% {
+    -webkit-transform: translate(150px, 0px);
     transform: translate(150px, 0px);
   }
   100% {
+    -webkit-transform: translate(150, 0);
+    transform: translate(150, 0);
+  }
+}
+@keyframes ladoAlado {
+  0% {
+    -webkit-transform: translate(150px, 0px);
+    transform: translate(150px, 0px);
+  }
+  100% {
+    -webkit-transform: translate(150, 0);
     transform: translate(150, 0);
   }
 }
@@ -9971,7 +10000,11 @@ h5 {
 }
 
 .header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 .header__container img {
@@ -10001,7 +10034,11 @@ h5 {
   padding: 0 0.5em;
 }
 .main__article--iconsocial {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 .main__article--iconsocial i {
@@ -10044,6 +10081,8 @@ h5 {
   width: 60%;
   height: 60%;
   border: 1px solid #000000;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
   align-self: center;
 }
 @media (min-width: 992px) {
@@ -10062,8 +10101,15 @@ h5 {
   background-color: #000000;
   color: #fff;
   font-family: "Poppins", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 .footer p {
@@ -10071,7 +10117,11 @@ h5 {
 }
 @media (min-width: 992px) {
   .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 }
@@ -10083,14 +10133,26 @@ h5 {
   color: #ffa500;
 }
 .footer__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 0 2em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 @media (min-width: 992px) {
   .footer__contact {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
   }
 }
@@ -10099,12 +10161,22 @@ h5 {
 }
 
 .footer__container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 @media (min-width: 992px) {
   .footer__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
   }
 }
@@ -10113,6 +10185,8 @@ h5 {
   background-color: #ffaf6d;
   border-radius: 5px;
   height: 2.5em;
+  width: -webkit-min-content;
+  width: -moz-min-content;
   width: min-content;
   font-weight: 400;
   border: 1px solid #fff;
